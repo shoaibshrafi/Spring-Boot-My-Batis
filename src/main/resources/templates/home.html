@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Committee Home Page</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<div th:fragment="mylist (mycommittees)">
+		<ul th:each="committee : ${mycommittees}">
+		<li th:text="${committee.name}">name</li>
+		<div th:replace="::mylist(${committee.children})"></div>
+		</ul>
+	</div>
+
+	<h2>List of Committee</h2>
+	<div th:replace="::mylist(${committees})"></div>
+
+</body>
+</html>

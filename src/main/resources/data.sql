@@ -1,0 +1,10 @@
+Insert into COMMITTEE(CODE, NAME, P_CODE) VALUES(1, 'Parent 1', NULL);
+Insert into COMMITTEE(CODE, NAME, P_CODE) VALUES(2, 'Parent 2', NULL);
+Insert into COMMITTEE(CODE, NAME, P_CODE) VALUES(3, 'Parent 3', NULL);
+Insert into COMMITTEE(CODE, NAME, P_CODE) VALUES(4, 'Child 1.1', 1);
+Insert into COMMITTEE(CODE, NAME, P_CODE) VALUES(5, 'Child 1.2', 1);
+Insert into COMMITTEE(CODE, NAME, P_CODE) VALUES(6, 'Child 1.3', 1);
+Insert into COMMITTEE(CODE, NAME, P_CODE) VALUES(7, 'Child 3.1', 3);
+Insert into COMMITTEE(CODE, NAME, P_CODE) VALUES(8, 'Child 3.2', 3);
+Insert into COMMITTEE(CODE, NAME, P_CODE) VALUES(9, 'Child 3.3', 3);
+Insert into COMMITTEE(CODE, NAME, P_CODE) VALUES(10, 'Child 3.1.1', 7);
